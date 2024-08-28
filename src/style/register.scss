@@ -1,0 +1,80 @@
+.Rcontainer {
+  display: flex;
+  height: 100vh;
+  background-color: #f4f4f4;
+
+
+  .Rleft {
+    width: 50%;
+    background-color: #5cb85c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .Rleft img {
+      width: 50%;
+      height: auto;
+    }
+  }
+
+  .Rright {
+    width: 50%;
+    background-color: #fff;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 400px;
+
+      .Rform-group {
+        margin-bottom: 20px;
+  
+        label {
+          margin-bottom: 5px;
+          font-weight: bold;
+        }
+  
+        input {
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+      }  
+
+      button {
+        padding: 10px 20px;
+        background-color: #5cb85c;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #4cae4c;
+      }
+    }
+
+    .Rsignup-link {
+      color: #5cb85c;
+      text-decoration: none;
+    }
+
+    .Rsignup-link:hover {
+      text-decoration: underline;
+    }
+  }
+}
